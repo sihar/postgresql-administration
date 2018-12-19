@@ -1,0 +1,9 @@
+Isi script basebackup
+
+#############  start #############
+
+#!/bin/bash
+export PGPASSWORD="password-database-nya"
+pg_basebackup -D /path/folder/basebackup/`date +%Y%m%d` --host=127.0.0.1 -U postgres -Ft -z -P
+
+#############  end #############

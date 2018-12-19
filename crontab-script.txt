@@ -1,0 +1,5 @@
+isi file crontab
+
+0 8,12,17 * * * /batch/file/script/dump.sh
+0 2 * * MON  /batch/file/script/basebackup.sh
+00 00 * * * sshpass -p 'password-nya' rsync -avz /path/sumber/ -e "ssh -p port-nya" user@ip-address:/path/tujuan/

@@ -1,2 +1,6 @@
 # postgresql-administration
-Operation that make postgresql run well
+
+Isi repo  
+- dump database script  
+- basebackup database script  
+- crontab script  
