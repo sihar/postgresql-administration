@@ -6,4 +6,8 @@ Isi script dump database
 export PGPASSWORD="password-database-nya"
 pg_dump -O -U postgres nama-database > /path/folder/penyimpanan/database/nama-database_$(date +%Y-%m-%d:%H:%M).sql
 
-#############  start #############
+#hapus file lebih dari 30 hari
+number_of_days=30
+find /path/folder/sql/ -type f -prune -mtime +$number_of_days -exec rm -f {} \;
+
+#############  end #############
