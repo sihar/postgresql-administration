@@ -4,7 +4,14 @@ Isi script dump database
 
 #!/bin/bash
 export PGPASSWORD="password-database-nya"
-pg_dump -O -U postgres nama-database > /path/folder/penyimpanan/database/nama-database_$(date +%Y-%m-%d:%H:%M).sql
+
+##### dump database format sql 
+##### hapus komentar atau tanda # di baris bawah untuk mengaktifkan script
+##### pg_dump -O -U postgres nama-database > /path/folder/penyimpanan/database/nama-database_$(date +%Y-%m-%d:%H:%M).sql
+
+##### dump database format custom
+##### hapus komentar atau tanda # di baris bawah untuk mengaktifkan script
+##### pg_dump -O -U namauser namadatabase -F c -f nama_file
 
 #hapus file lebih dari 30 hari
 number_of_days=30
