@@ -1,0 +1,5 @@
+restore dari file sql
+psql -U namauser namadatabase < namafilenya.sql
+
+restore dari file backup
+pg_restore -U namausernya -O --dbname=mydb --verbose namafilenya
